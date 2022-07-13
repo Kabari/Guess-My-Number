@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arcade Interlaced';
+}
+
+body {
+    background-color: #13192c;
+    /* font-family: 'Press Start 2P', sans-serif; */
+    /* font-family: 'Player-1-Up-3D'; */
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 320px;
+}
+
+.again-between {
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+
+.again-between div {
+    display: flex;
+    width: 100%;
+}
+
+.again-btn {
+    margin: 20px;
+}
+
+.btn {
+    background-color: aliceblue;
+    color: #13192c;
+    width: 180px;
+    height: 70px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #3e4975;
+}
+
+.between {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.between-text {
+    margin-right: 30px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.h1-text {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.h1-text h1 {
+    font-size: 60px;
+}
+
+.number {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 120px;
+    font-size: 50px;
+    background-color: aliceblue;
+    color: #13192c;
+    border-radius: 10px;
+    margin: 0px auto;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.main div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%
+}
+
+.left {
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.guess {
+    display: block;
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    background: none;
+    border: none;
+    color: aliceblue;
+    outline: 4px solid aliceblue;
+}
+
+.right {
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message,
+.label-highscore,
+.label-score {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.message {
+    margin: 10px 100px 50px 100px;
+    margin-bottom: 50px;
+    line-height: 40px;
+}
+
+.label-score {
+    margin: 10px 100px;
+}
+
+.label-highscore {
+    margin: 10px 100px;
+}
+
+.credit {
+    padding: 2px;
+    text-align: center;
+    color: aliceblue;
+}
+
+a {
+    color: cornflowerblue;
+}

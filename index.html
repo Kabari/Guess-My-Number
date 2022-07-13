@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js" defer></script>
+    <title>Guess My Number</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="again-between">
+        <div class="again-btn"><button class="btn again">Again!</button></div>
+        <div class="between"><p class="between-text">(Between 1 and 20)</p></div>
+      </div>
+      <div class="h1-text"><h1>Guess My Number!</h1></div>
+      <div class="number">?</div>
+    </header>
+    <main class="main">
+      <div class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </div>
+
+      <div class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🏅 Highscore: <span class="highscore">0</span>
+        </p>
+      </div>
+    </main>
+    <footer>
+        <p class="credit">Coded by <a href="https://github.com/Kabari">Emmanuel Kabari</a> &copy; 2022 Emmanuel Kabari</p>
+    </footer>
+  </body>
+</html>
