@@ -19,63 +19,48 @@ check.addEventListener('click', () => {
 
   //! When there is no input
   if (!guess) {
-    displayMessage('⛔ No number!');
+    displayMessage("⛔ No number!");
 
     setTimeout(() => {
-      displayMessage('Start guessing...');
+      displayMessage("Start guessing...");
     }, 2000);
 
     //! When player wins
   } else if (guess === secretNumber) {
-    displayMessage('🎉 Correct Number!');
+    displayMessage("🎉 Correct Number!");
 
-    document.querySelector('.number').textContent = secretNumber;
+    document.querySelector(".number").textContent = secretNumber;
 
-    document.querySelector('h1').textContent = 'You Won 🥳🥳🥳';
+    document.querySelector("h1").textContent = "You Won 🥳🥳🥳";
 
-    document.body.style.backgroundColor = '#60b347';
+    document.body.style.backgroundColor = "#60b347";
 
-    document.querySelector('.number').style.width = '400px';
+    document.querySelector(".number").style.width = "400px";
 
     if (score > highScore) {
       highScore = score;
-      document.querySelector('.highscore').textContent = highScore;
+      document.querySelector(".highscore").textContent = highScore;
     }
 
-    //! When guess is higher than Secret Number
-  } else if (guess > secretNumber) {
+    // !When guess is not secretNumber
+    // ? This is a refactored code to implement the DRY principle
+  } else if (guess !== secretNumber) {
     if (score > 1) {
-      displayMessage('📈 Number too high');
+      displayMessage(
+        guess > secretNumber ? "📈 Number too high" : "📉 Number too low"
+      );
 
       score--;
 
-      document.querySelector('.score').textContent = score;
+      document.querySelector(".score").textContent = score;
     } else {
-      displayMessage('😭 You lost the game');
+      displayMessage("😭 You lost the game");
 
-      document.querySelector('.score').textContent = 0;
+      document.querySelector(".score").textContent = 0;
 
-      document.querySelector('h1').textContent = 'Game Over!!!';
+      document.querySelector("h1").textContent = "Game Over!!!";
 
-      document.body.style.backgroundColor = 'red';
-    }
-
-    //! When guess is lower than Secret Number
-  } else if (guess < secretNumber) {
-    if (score > 1) {
-      displayMessage('📈 Number too low');
-
-      score--;
-
-      document.querySelector('.score').textContent = score;
-    } else {
-      displayMessage('😭 You lost the game');
-
-      document.querySelector('.score').textContent = 0;
-
-      document.querySelector('h1').textContent = 'Game Over!!!';
-
-      document.body.style.backgroundColor = 'red';
+      document.body.style.backgroundColor = "red";
     }
   }
 });
