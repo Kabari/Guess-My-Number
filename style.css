@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arcade Interlaced', sans-serif;
 }
 
 body {
     background-color: #13192c;
+    font-family: 'Arcade Interlaced', sans-serif;
 }
 
 .header {
