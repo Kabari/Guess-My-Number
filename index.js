@@ -35,7 +35,7 @@ check.addEventListener('click', () => {
 
     document.body.style.backgroundColor = "#60b347";
 
-    document.querySelector(".number").style.width = "400px";
+    document.querySelector(".number").style.width = "300px";
 
     if (score > highScore) {
       highScore = score;
