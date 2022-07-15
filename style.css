@@ -1,14 +1,14 @@
-@import url(https://allfont.net/allfont.css?fonts=arcade-interlaced);
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
 }
 
 body {
     background-color: #13192c;
-    font-family: 'Arcade Interlaced', arial;
 }
 
 .header {
