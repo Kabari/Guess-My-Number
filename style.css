@@ -1,14 +1,14 @@
+@import url('http://fonts.cdnfonts.com/css/arcade');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arcade Interlaced';
+    font-family: 'Arcade Interlaced', sans-serif;
 }
 
 body {
     background-color: #13192c;
-    /* font-family: 'Press Start 2P', sans-serif; */
-    /* font-family: 'Player-1-Up-3D'; */
 }
 
 .header {
