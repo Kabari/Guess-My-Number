@@ -154,3 +154,142 @@ body {
 a {
     color: cornflowerblue;
 }
+
+
+/*! Media Queries */
+
+@media (min-width: 760px) and (max-width: 1440px) {
+    .h1-text h1 {
+        font-size: 40px;
+    }
+
+    .between-text {
+        font-size: 15px;
+    }
+
+    .btn {
+        width: 150px;
+        font-size: 22px;
+    }
+
+    .guess {
+        width: 210px;
+    }
+
+    .right {
+        align-items: flex-start;
+    }
+
+    .message,
+    .label-highscore,
+    .label-score {
+        color: aliceblue;
+        font-size: 18px;
+        margin: 10px 5px;
+    }
+
+    .credit {
+        font-size: 13px;
+    }
+
+    .h1-text {
+        margin-top: 50px;
+    }
+
+}
+
+@media (min-width: 457px) and (max-width: 759px) {
+    .h1-text h1 {
+        font-size: 28px;
+    }
+
+    .between-text {
+        font-size: 10px;
+    }
+
+    .btn {
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .guess {
+        width: 150px;
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .right {
+        align-items: flex-start;
+    }
+
+    .message,
+    .label-highscore,
+    .label-score {
+        color: aliceblue;
+        font-size: 10px;
+        margin: 10px 5px;
+    }
+
+    .credit {
+        font-size: 8px;
+    }
+
+    .h1-text {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        height: 280px;
+    }
+
+    .between-text {
+        font-size: 6px;
+    }
+
+    .h1-text {
+        align-items: flex-start;
+        height: 80px;
+    }
+
+    .h1-text h1 {
+        font-size: 21px;
+    }
+
+    .number {
+        width: 120px;
+        height: 80px;
+    }
+
+    .btn {
+        width: 90px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .guess {
+        width: 120px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+    .main div {
+        height: 200px;
+    }
+
+    .message,
+    .label-highscore,
+    .label-score {
+        color: aliceblue;
+        font-size: 9px;
+        margin: 10px 5px;
+    }
+
+    .credit {
+        font-size: 5px;
+    }
+}
